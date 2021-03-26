@@ -40,7 +40,7 @@ jobs:
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-${{ hashFiles('**/pom.xml') }}
-      - name: Publish package
+      - name: Publish package 
         run: mvn $MAVEN_CLI_OPTS clean deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
