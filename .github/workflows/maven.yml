@@ -25,7 +25,7 @@
 name: my first workflow for a java project
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   publish:
